@@ -17,16 +17,26 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   color: #fff;
-  background: url("1.png") no-repeat;
+  background: url("2.png") no-repeat;
   background-position: 50% 30%;
   background-size: 100%;
 
   span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 40px;
     text-align: center;
     position: relative;
     top: 300px;
+    font-size: 1.4rem;
     color: black;
     background-color: white;
+  }
+
+  @media screen and (max-width: 600px) {
+    /* top: 200px; */
+    background-size: 500px;
   }
 `;
